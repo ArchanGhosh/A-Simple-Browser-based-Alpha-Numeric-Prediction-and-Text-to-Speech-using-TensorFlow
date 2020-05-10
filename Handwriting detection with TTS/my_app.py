@@ -46,7 +46,7 @@ def fashion():
   target_names=['0','1','2','3','4','5','6','7','8','9','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
   ans=target_names[result[0]]
-  speech=gTTS(ans)
+  speech=gTTS(ans) //converting text to speech
   speech.save("hello.mp3")
   
   return str(ans)
